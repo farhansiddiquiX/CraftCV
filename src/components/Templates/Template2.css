@@ -1,0 +1,77 @@
+.template-modern {
+  padding: 20px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.template-modern header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 8px;
+}
+
+.template-modern header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color, #007bff);
+}
+
+.template-modern header h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.template-modern .modern-contact {
+  font-size: 14px;
+  color: var(--primary-color);
+  margin-top: 4px;
+}
+
+.template-modern .modern-summary {
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.template-modern h2 {
+  margin: 16px 0 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+  color: var(--primary-color);
+}
+
+.template-modern .modern-entry {
+  margin-bottom: 12px;
+}
+
+.template-modern .modern-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.template-modern .modern-sub {
+  font-style: italic;
+  color: #444;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.template-modern .date-range {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.skill-pill {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 12px;
+}

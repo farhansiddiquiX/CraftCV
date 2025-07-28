@@ -1,0 +1,109 @@
+/* src/components/templates/Template1.css */
+body{
+  margin: 0;
+  padding: 0;
+}
+.classic-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 24px;
+  font-family: 'Lora', serif;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.classic-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.classic-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.classic-header-text {
+  flex: 1;
+}
+
+.classic-name {
+  margin: 0;
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.classic-contact {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.classic-section {
+  margin-bottom: 24px;
+}
+
+.classic-section h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 4px;
+}
+
+.classic-entry + .classic-entry {
+  margin-top: 16px;
+}
+
+.classic-entry h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.classic-institution {
+  font-size: 14px;
+  color: #333;
+  font-style: italic;
+  margin: 2px 0;
+}
+
+.classic-dates {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  margin: 2px 0 8px;
+}
+
+.classic-entry p {
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.classic-skill-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.classic-skill-list li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+section, .classic-section, .classic-entry {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+@page {
+  margin: 0;
+}
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

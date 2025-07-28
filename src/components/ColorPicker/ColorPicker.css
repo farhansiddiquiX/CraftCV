@@ -1,0 +1,70 @@
+.color-picker {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.color-picker h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.swatches {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.swatch {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.swatch:hover {
+  border-color: #999;
+}
+
+.swatch.active {
+  border-color: black;
+}
+
+/* Custom Color Picker */
+.custom-picker input[type="color"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+
+.custom-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .color-picker {
+    text-align: center;
+  }
+
+  .swatches {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .swatch {
+    width: 32px;
+    height: 32px;
+  }
+}

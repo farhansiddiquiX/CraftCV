@@ -1,0 +1,19 @@
+/* reuse .merge-btn from PdfMerger.css or add: */
+.merge-btn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}
+.resume-preview {
+  width: 794px; /* match A4 width */
+  background-color: white;
+  padding: 30px;
+  margin: auto;
+  box-sizing: border-box;
+}

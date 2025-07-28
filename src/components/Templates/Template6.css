@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #0057a3;
+  --line-color: #ddd;
+  --text-color: #333;
+  --bg-light: #f9f9f9;
+}
+
+.t6-timeline-container {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.t6-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.t6-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.t6-header-text h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: var(--primary-color);
+}
+
+.t6-header-text p {
+  margin: 4px 0;
+  font-size: 0.9em;
+}
+
+.t6-summary {
+  margin-bottom: 40px;
+}
+
+.t6-summary h2 {
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.t6-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.t6-line {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--line-color);
+}
+
+.t6-event {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+
+.t6-event:last-child {
+  margin-bottom: 0;
+}
+
+.t6-dot {
+  position: absolute;
+  left: 35px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.t6-content h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.t6-meta {
+  font-style: italic;
+  color: #666;
+  margin: 4px 0;
+}
+
+.t6-date {
+  font-size: 0.9em;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.t6-content p {
+  margin: 4px 0;
+  font-size: 0.95em;
+}
+
+.t6-section,
+.t6-skills {
+  margin-top: 40px;
+}
+
+.t6-section h2,
+.t6-skills h2 {
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.t6-card {
+  background: var(--bg-light);
+  padding: 15px;
+  border-left: 4px solid var(--primary-color);
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.t6-card h3 {
+  margin: 0 0 6px;
+}
+
+.t6-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.t6-tags span {
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9em;
+}
+
+
+@media (max-width: 600px) {
+  .t6-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .t6-event {
+    padding-left: 50px;
+  }
+  .t6-line {
+    left: 20px;
+  }
+  .t6-dot {
+    left: 12px;
+  }
+}

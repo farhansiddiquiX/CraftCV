@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #1e90ff;
+  --sidebar-bg: #111;
+  --main-bg: #f9f9f9;
+  --text-light: #eee;
+  --text-dark: #333;
+}
+
+.t7-container {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100%;
+}
+
+.t7-sidebar {
+  width: 280px;
+  background: var(--sidebar-bg);
+  color: var(--text-light);
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t7-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  margin-bottom: 16px;
+  box-shadow: 0 0 5px #00000070;
+}
+
+.t7-sidebar h1 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.t7-role {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.t7-contact p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.t7-sidebar h2 {
+  color: var(--primary-color);
+  margin-top: 24px;
+  font-size: 16px;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 4px;
+  width: 100%;
+  text-align: left;
+}
+
+.t7-skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+.t7-skills li {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.t7-main {
+  flex: 1;
+  background: var(--main-bg);
+  padding: 32px;
+  color: var(--text-dark);
+}
+
+.t7-main section {
+  margin-bottom: 32px;
+}
+
+.t7-main h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.t7-entry h3 {
+  margin: 8px 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.t7-entry span {
+  font-size: 12px;
+  color: #777;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.t7-entry p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.t7-achievements {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.t7-achievements li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+#skills{
+  text-align: center;
+  margin-bottom: 10px;
+}

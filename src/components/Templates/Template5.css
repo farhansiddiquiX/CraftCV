@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #0057a3;
+  --text-dark: #222;
+  --bg-light: #f9f9f9;
+}
+
+.template5-container {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  color: var(--text-dark);
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.template5-aside {
+  width: 38%;
+  background: var(--primary-color);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.template5-photo-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 20px;
+}
+
+.bar {
+  position: absolute;
+  background: rgba(255,255,255,0.3);
+  z-index: 1;
+}
+
+.bar.vertical {
+  width: 8px;
+  height: 160px;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.bar.horizontal {
+  height: 8px;
+  width: 160px;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  border-radius: 4px;
+}
+
+.template5-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+  border: 4px solid white;
+}
+
+.name {
+  font-size: 1.5em;
+  margin-bottom: 4px;
+}
+
+.location{
+  font-size: 0.9em;
+  margin-top: 15px;
+}
+
+.title,
+.contact p {
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+
+
+.section {
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--bg-light);
+}
+
+#skills{
+  color: white;
+}
+
+.section h2 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.skill-list li {
+  background: rgba(255,255,255,0.2);
+  margin: 4px 0;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.template5-main {
+  width: 70%;
+  padding: 40px 30px;
+}
+
+.entry {
+  margin-bottom: 18px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.entry-sub {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.date {
+  color: var(--primary-color);
+  font-size: 0.85em;
+}
+
+@media (max-width: 700px) {
+  .template5-container {
+    flex-direction: column;
+  }
+  .template5-aside,
+  .template5-main {
+    width: 100%;
+    padding: 20px;
+  }
+  .template5-photo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
